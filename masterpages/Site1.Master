@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Eva3_ChristianPasten.masterpages.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../estilo/Site1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   
+    <form id="form1" runat="server">
+
+
+          
+          <asp:Image ID="Image1" runat="server" width="60px" ImageUrl="~/images/logo-hotel.png" heigth="50px"/>
+
+        <asp:Label ID="Label1" runat="server" Text="Sistema Reservas y Cobros" ForeColor="Red"></asp:Label>
+    
+        <br />
+    <asp:Menu Font-Size="Small" Width="100%" ID="Menu1" runat="server" Orientation="Horizontal" ForeColor="Red" OnMenuItemClick="Menu1_MenuItemClick">
+        <Items>
+            <asp:MenuItem Text="Inicio" Value="Inicio" NavigateUrl="~/login.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Habitaciones" Value="Habitaciones"></asp:MenuItem>
+            <asp:MenuItem Text="Reservas" Value="Reservas" NavigateUrl="~/reservas.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Pagos" Value="Pagos"></asp:MenuItem>
+            <asp:MenuItem Text="Servicios" Value="Servicios"></asp:MenuItem>
+            <asp:MenuItem Text="Salir" Value="Salir" NavigateUrl="~/login.aspx"></asp:MenuItem>
+        </Items>
+    </asp:Menu>
+        <br />
+
+
+
+
+
+
+
+
+
+    
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+            </asp:ContentPlaceHolder>
+      
+    </form>
+</body>
+</html>
